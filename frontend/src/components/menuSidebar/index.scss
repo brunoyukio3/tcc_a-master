@@ -1,0 +1,76 @@
+.componente-menuSidebar {
+
+    .container-sidebar {
+        background-color: #181818;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 40vw;
+
+        animation: showSidebar 0.4s;
+
+        &.active {
+            left: 0; // Quando o sidebar está ativo, a classe 'active' é aplicada
+        }
+
+        svg {
+            position: fixed;
+            color: white;
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 32px;
+            cursor: pointer;
+        }
+
+        @keyframes showSidebar {
+            from {
+                opacity: 0;
+                width: 0;
+            }
+            to {
+                opacity: 1;
+                width: 40vw;
+            }
+        }
+    }
+
+    .itens-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 5px;
+
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 5%;
+
+        .itens{
+            width: 100%;
+        }
+
+        .logo{
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .container-sidebar {
+            width: 100%;
+        }
+
+        @keyframes showSidebar {
+            from {
+                opacity: 0;
+                width: 0;
+            }
+            to {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+   
+}

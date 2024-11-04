@@ -1,0 +1,138 @@
+.Pagina-login {
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../../../public/assets/images/fundo_login.png);
+    font-family: inter;
+
+    header {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2% 0% 5% 0%;
+
+        .campos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+			width: 50%;
+			max-width: 1500px;
+			min-width: 300px;
+            padding: 2em 4em;
+            gap: 23px;
+
+            background-color: #ffffff;
+
+            border-radius: 30px;
+            border: 2px solid #000000;
+
+            h1 {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            .campo {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+
+				.senha, .usuario {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+			        box-shadow: 2px 2px 4px 0px #eeeeee;
+
+					border: 1px solid #cccccc;
+            		border-radius: 5px;
+					padding: 0px 5% 0px 5%;
+
+				
+					.olho {
+						display: flex;
+						justify-content: center;
+						
+						border: none;
+						background: none;
+					}
+					
+					input {
+						width: 100%;
+						padding: 10px;
+	
+						margin: 5px 0px;
+	
+						outline: none;
+						border: none;
+					}
+
+				}
+				
+				h4{
+					font-size: 1.5rem;
+				}
+            }
+
+			.senha:focus-within {
+				outline: 1px solid #0099ff; /* ativa quando o input dentro do elemento é clicado*/
+				
+			}
+
+			.usuario:focus-within {
+				outline: 1px solid #0099ff; /* ativa quando o input dentro do elemento é clicado*/
+			}
+			
+
+			a {
+				width: fit-content;
+				font-weight: 500;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+            .botaoEntrar {
+                cursor: pointer;
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                padding: 1.2em 2em;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .linha {
+                background-color: rgb(19, 19, 19);
+                border: none;
+                height: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+	.Pagina-login{
+
+		.formulario{
+			.campos{
+				padding: 1em 2em;
+			}
+		}
+	}
+}

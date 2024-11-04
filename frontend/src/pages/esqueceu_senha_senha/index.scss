@@ -1,0 +1,69 @@
+.senha{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../../../public/assets/images/fundo_login.png);
+    font-family: inter;
+    
+        .container {
+            display: flex;        
+            padding-bottom: 50px;
+            .formulario {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+    
+                .campos {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    padding: 20px 30px;
+                    gap: 20px;
+    
+                    background-color: #ffffff;
+    
+                    border-radius: 30px;
+                    border: 2px solid #000000;
+    
+                    h1 {
+                        font-size: 25px;
+                        text-align: center;
+                    }
+    
+                    .campo {
+                        display: flex;
+                        flex-direction: column  ;
+                        input {
+                            width: 20rem;
+                            padding: 10px 15px;
+                            margin: 5px 0px;
+    
+                            box-shadow: 2px 2px 4px 0px #eeeeee;
+                            border-color: #e2e2e2;
+                            border-style: solid;
+    
+                            border-radius: 5px;
+                        }
+                    
+                    }
+    
+                    button {
+                        cursor: pointer;
+                        background-color: black;
+                        color: white;
+                        padding: 10px 0px;
+                        border: none;
+                        border-radius: 5px;
+                        
+                    }
+    
+                    .linha {
+                        background-color: rgb(19, 19, 19);
+                        border: none;
+                        height: 2px;
+                }
+            }
+        }
+    }
+}

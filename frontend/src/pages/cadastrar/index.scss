@@ -1,0 +1,180 @@
+.pagina-cadastrar {
+    font-family: Inter;
+    width: 100%;
+
+    main {
+        padding: 5%;
+
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-weight: 600;
+        }
+
+        .formulario {
+            flex-direction: column;
+
+            input,
+            select {
+                padding: 10px 20px;
+                border-radius: 8px;
+                border: 1px solid rgba(128, 128, 128, 0.116);
+                box-shadow: #0000003d 2px 3px 4px;
+            }
+
+            .campos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 10px;
+
+                margin-top: 20px;
+
+                .campo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    width: 35%;
+                    gap: 10px;
+
+                    input {
+                        font-size: 0.8rem;
+                    }
+
+                    .contador {
+                        display: flex;
+                        gap: 15px;
+
+                        input {
+                            width: 20%;
+                            text-align: center;
+                            font-family: inter;
+                        }
+
+                        input[type="number"]::-webkit-inner-spin-button {
+                            display: none; /* Oculta as setas */
+                        }
+
+                        button {
+                            padding: 10px 20px;
+                            background-color: white;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    /* From Uiverse.io by Yaya12085 */
+                    .custum-file-upload {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: space-between;
+                        gap: 20px;
+                        cursor: pointer;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px dashed #cacaca;
+                        background-color: rgba(255, 255, 255, 1);
+                        padding: 1.5rem;
+                        border-radius: 10px;
+                        box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .custum-file-upload .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                
+                    .custum-file-upload .text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .custum-file-upload .text span {
+                        font-weight: 400;
+                        color: rgba(75, 85, 99, 1);
+                    }
+
+                    .custum-file-upload input {
+                        display: none;
+                    }
+                }
+            }
+
+            .checkbox {
+                width: 35%;
+                display: flex;
+                align-items: center;
+            }
+
+            .descricao {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+                margin-top: 30px;
+
+                textarea {
+                    font-family: "inter";
+                    font-size: 1rem;
+
+                    border-radius: 10px;
+                    border-color: #e0e0e0;
+
+                    text-align: left;
+                    vertical-align: top;
+
+                    width: 100%;
+
+                    height: 200px;
+                    padding: 10px;
+
+                    resize: none;
+                }
+            }
+        }
+    }
+
+    .check {
+        margin: 20px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    hr {
+        border: none;
+        background-color: black;
+        height: 2px;
+    }
+
+    .lile {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+
+        .inserir {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+        .cancelar {
+            background-color: rgba(194, 13, 13, 0.788);
+            color: white;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+    }
+}

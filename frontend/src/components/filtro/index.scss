@@ -1,0 +1,16 @@
+.filtro_preco {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid #d3d3d3;
+    height: 10vh;
+    width: 100%;
+    padding: 2%;
+    .precinho {
+      display: flex;
+      justify-content: space-between;
+      padding: 1%;
+      padding-bottom: 2%;
+    }
+    
+  }

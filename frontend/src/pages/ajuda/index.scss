@@ -1,0 +1,71 @@
+.pagina-ajuda {
+  display: flex;
+  flex-direction: column;
+  font-family: "inter";
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .ajuda {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+    h1 {
+      font-size: 34px;
+      color: #423f3f;
+    }
+
+    .perguntasErespostas {
+      display: flex;
+      margin-top: 35px;
+      margin-bottom: 20px;
+      font-size: 27px;
+      font-weight: 500;
+
+      details {
+        p {
+          color: #6f6767;
+        }
+      }
+
+      details {
+        width: 100%;
+
+        summary {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          list-style: none;
+        }
+
+        /* Seta padrão com rotação ao expandir */
+        summary::after {
+          content: "▸"; /* Seta apontando para a direita */
+          margin-left: 8px;
+          font-size: 30px;
+          transition: transform 0.5s ease; /* Animação suave na rotação */
+        }
+
+        /* Quando o details é aberto, a seta gira para baixo */
+        &[open] summary::after {
+          transform: rotate(90deg); /* Roda para baixo */
+        }
+
+        .conteudo {
+          display: flex;
+          flex-direction: column;
+          padding-top: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .cosmet {
+    width: 60%;
+    margin-left: 20%;
+  }
+}

@@ -1,0 +1,55 @@
+.codigo {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../../../public/assets/images/fundo_login.png);
+  font-family: inter;
+
+  .container {
+    .formulario {
+      padding-left: 38%;
+      padding-bottom: 100px;
+      padding-top: 50px;
+      .campo {
+        display: flex;
+        flex-direction: column;
+        border: 2px black solid;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 300px;
+        padding: 20px 20px 20px 20px;
+        h1{
+            font-size: 25px;
+        }
+        p {
+          margin-top: 20px;
+          font-weight: 600;
+          
+        }
+        input {
+            width: 18rem;
+            padding: 10px 15px;
+            margin: 5px 0px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 4px 0px #eeeeee;
+            border-color: #e2e2e2;
+            border-style: solid;
+
+            border-radius: 5px;
+        }
+        button {
+            cursor: pointer;
+            background-color: black;
+            margin-top: 20px;
+            color: white;
+            padding: 8px;
+            width: 18rem;
+            border: none;
+            border-radius: 5px;
+        }
+      }
+    }
+  }
+}

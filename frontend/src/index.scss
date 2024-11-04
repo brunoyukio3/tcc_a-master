@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Inter;
+    src: url('../public/assets/fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+// @font-face {
+//     font-family: fancy;
+//     src: url("../public/assets/fonts/Peristiwa.otf");
+// }
+
+
+@font-face {
+    font-family: Lobster;
+    src: url("../public/assets/fonts/Lobster-Regular.ttf");
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+}

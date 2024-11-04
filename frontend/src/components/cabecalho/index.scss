@@ -1,0 +1,126 @@
+.secao-cabecalho {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dfdfdf;
+    font-family: "inter";
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+
+    .barraInfo{
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+        gap: 15px;
+
+        color: antiquewhite;
+        padding: 10px 5vw;
+        background-color: #181818;
+        border-bottom: solid 1px black;
+
+        .telefone{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .localizacao{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    .secao-navegacao {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        padding: 15px 0px;
+
+        width: 100%;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 150px;
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+
+        .navegacao {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            padding: 1.5rem 4rem;
+
+            border-radius: 10px;
+            font-family: "inter";
+
+            color: rgb(26, 26, 26);
+            //background-color: rgb(235, 235, 235);
+            //border: 1px solid rgb(29, 29, 29);
+
+            gap: 15px;
+
+            .linha{
+                background-color: rgb(14, 14, 14);
+
+                 height: 30px;
+                 width: 2px;
+            }
+        }
+
+        .pesquisa {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0px 20px;
+            height: 35px;
+
+            border-radius: 20px;
+
+            border: 2px solid rgb(158, 158, 158);
+
+            input {
+                color: black;
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+
+        @media (max-width: 950px) {
+            .navegacao {
+                display: none;
+                font-family: inter;
+            }
+
+            .pesquisa {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .secao-cabecalho {
+        flex-direction: column;
+    }
+
+    .secao-navegacao{
+        flex-direction: column;
+    }
+}

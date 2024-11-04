@@ -1,0 +1,136 @@
+.land {
+    position: relative;
+    width: 100%;
+    height: 500px; // Mantenha a altura desejada ou ajuste conforme necessário
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+
+    
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+
+      &.active {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }
+    }
+  
+    .banner {
+      width: 100%; 
+      height: auto; 
+      max-height: 500px; 
+      object-fit: cover; 
+    }
+  
+    .banner-content {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 20%;
+      font-family: inter;
+  
+      &.left {
+        left: 50px;
+        color: #000; 
+      }
+  
+      &.right {
+        right: 50px;
+        color: #fff; 
+      }
+  
+      h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin: 0;
+  
+      }
+  
+      p {
+        font-size: 1.2em;
+        margin: 0;
+        color: inherit; 
+      }
+  
+      
+      .veja-mais {
+        font-size: 1em;
+        color: #fff;
+        background-color: #524f4f;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s; 
+  
+        &:hover {
+          background-color: #333;
+          transform: translateY(-3px); 
+        }
+     
+    }
+    
+    }
+  }
+
+  .listaProdutos{
+    display: flex;
+    font-family: inter;
+    flex-direction: column;
+    margin: 20px;
+    .produtos{
+        display: flex;
+        flex-wrap: wrap;
+        font-family: inter;
+        gap: 20px;
+    }
+}
+  .ashei{
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+    margin: 20px;
+    .images{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+        img{
+            max-width: 12%;
+        }
+    }
+}
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-family: inter;
+    .dot {
+      width: 14px;
+      height: 16px;
+      background-color: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &.active {
+        background-color: #000000;
+      }
+    }
+
+
+
+  }
+  

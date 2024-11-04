@@ -1,0 +1,116 @@
+.pagina-SobreNos {
+	font-family: "inter";
+
+    .sobre {
+        width: 100%;
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        .faleConosco {
+            width: 100%;
+			height: 50vh;
+            padding: 20vh 0;
+
+            background-image: url("../../../public/assets/images/imageasd.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            button {
+                margin-left: 4vw;
+				padding: 15px 60px;
+                background-color: #171717;
+
+				border: none;
+                border-radius: 5px;
+
+				color: #ffffff;
+                font-weight: 800;
+				font-size: 1rem;
+            }
+        }
+
+        .nossaMissao {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+            gap: 40px;
+
+            padding: 20vh 0vw;
+            background-color: #171717;
+			
+            color: #ffffff;
+		
+			p{
+				width: 30%;
+				font-weight: 200;
+			}
+        }
+
+        .comentarios {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            padding: 4% 0px;
+            background-color: #fcbf58;
+
+            .comments-txt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+               
+                p{
+                    font-weight: 600;
+                    text-align: center;
+                    width: 30%;
+                }
+            }
+
+            .seta {
+                height: 10vh;
+                margin: 5vw 0;
+            }
+        }
+
+        .recado {
+            display: flex;
+            justify-content: center;
+
+            padding: 10vh 0;
+
+            p {
+                width: 70%;
+            }
+        }
+        
+        .creditos{
+            margin-top: 20px;
+            padding: 0% 15%;
+        }
+    }
+
+    .tiny {
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 50vw;
+        }
+    }
+
+    footer {
+        width: 100%;
+    }
+}

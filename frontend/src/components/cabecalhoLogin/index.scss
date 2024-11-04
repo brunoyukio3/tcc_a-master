@@ -1,0 +1,55 @@
+.container {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../../../public/assets/images/fundo_login.png);
+
+  font-family: inter;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+
+  .botao-voltar {
+    display: flex;
+    .voltar {
+      display: flex;
+      margin: 2%;
+      gap: 5%;
+      font-size: 70%;
+      border-bottom: 2px solid rgb(114, 114, 114);
+      font-weight: 500;
+
+      img {
+        width: 20%;
+        height: auto;
+      }
+    }
+  }
+
+
+  .logo {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    align-items: center;
+
+    .botao-voltar{
+      position:fixed;
+    .voltar {
+      img {
+        width: 25px !important;
+        height: auto !important;
+      }
+    }
+  }
+    .logo {
+      margin-top: 20px;
+      width: 260px;
+    }
+  }
+}
